@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio - Riski</title>
+
+    <!-- Pemanggilan File CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Icon Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR MENU NAVIGASI (Bisa Diklik/Diakses) -->
+    <nav class="navbar">
+      <div class="logo">Riski<span>.</span></div>
+      <ul class="nav-menu">
+        <li>
+          <button class="nav-btn active" onclick="showTab('home')">
+            <i class="fa-solid fa-house"></i> Beranda
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="showTab('about')">
+            <i class="fa-solid fa-user"></i> Tentang
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="showTab('education')">
+            <i class="fa-solid fa-graduation-cap"></i> Pendidikan
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="showTab('hobby')">
+            <i class="fa-solid fa-table-tennis-paddle-ball"></i> Hobi
+          </button>
+        </li>
+        <li>
+          <button class="nav-btn" onclick="showTab('contact')">
+            <i class="fa-solid fa-paper-plane"></i> Kontak
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- CONTAINER UTAMA KOTAK-KOTAK -->
+    <main class="content-container">
+      <!-- 1. KOTAK BERANDA -->
+      <div id="home" class="tab-content active-tab">
+        <div class="card profile-card">
+          <div class="profile-img-box">
+            <!-- Ganti link di src ini dengan foto profil Riski -->
+            <img src="assets/img/images.jpg" alt="Foto Riski" />
+          </div>
+          <h2>Riski</h2>
+          <p class="tagline">Siswa SMKN 1 Rongga</p>
+          <div class="status-badge">
+            <span class="dot"></span> Pelajar Aktif
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. KOTAK TENTANG -->
+      <div id="about" class="tab-content">
+        <div class="card">
+          <div class="card-header">
+            <i class="fa-solid fa-user"></i>
+            <h3>Tentang Saya</h3>
+          </div>
+          <p class="card-text">
+            Halo! Saya <strong>Riski</strong>. Saya seorang pelajar di
+            <strong>SMKN 1 Rongga</strong> yang bersemangat untuk belajar
+            hal-hal baru, menyukai tantangan, dan aktif dalam bidang olahraga.
+          </p>
+        </div>
+      </div>
+
+      <!-- 3. KOTAK PENDIDIKAN (Dengan Tempat Logo Sekolah) -->
+      <div id="education" class="tab-content">
+        <div class="card">
+          <div class="card-header">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Riwayat Pendidikan</h3>
+          </div>
+
+          <div class="edu-grid">
+            <!-- SMKN 1 RONGGA -->
+            <div class="edu-box active-school">
+              <div class="logo-box">
+                <img
+                  src="assets/img/images__1_-removebg-preview.png"
+                  alt="Logo SMKN 1 Rongga"
+                />
+              </div>
+              <div class="edu-info">
+                <h4>SMKN 1 Rongga</h4>
+                <span>Pendidikan Saat Ini</span>
+              </div>
+            </div>
+
+            <!-- SMPN 1 GUNUNGHALU -->
+            <div class="edu-box">
+              <div class="logo-box">
+                <img
+                  src="assets/img/unnamed-removebg-preview (1).png"
+                  alt="Logo SMPN 1 Gununghalu"
+                />
+              </div>
+              <div class="edu-info">
+                <h4>SMPN 1 Gununghalu</h4>
+                <span>Sekolah Menengah Pertama</span>
+              </div>
+            </div>
+
+            <!-- SDN 1 CIBEDUG -->
+            <div class="edu-box">
+              <div class="logo-box">
+                <img
+                  src="assets/img/553345cc94a8f8368ec446ef272dd099-removebg-preview (1).png"
+                  alt="Logo SDN 1 Cibedug"
+                />
+              </div>
+              <div class="edu-info">
+                <h4>SDN 1 Cibedug</h4>
+                <span>Sekolah Dasar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. KOTAK HOBI -->
+      <div id="hobby" class="tab-content">
+        <div class="card">
+          <div class="card-header">
+            <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+            <h3>Hobi & Minat</h3>
+          </div>
+          <div class="hobby-content">
+            <span class="hobby-tag">Badminton (Bulutangkis)</span>
+            <p class="card-text">
+              Sangat menyukai olahraga badminton untuk menjaga kebugaran tubuh,
+              melatih kelincahan, fokus, serta kerja sama tim.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. KOTAK KONTAK -->
+      <div id="contact" class="tab-content">
+        <div class="card">
+          <div class="card-header">
+            <i class="fa-solid fa-paper-plane"></i>
+            <h3>Hubungi Saya</h3>
+          </div>
+          <p class="card-text" style="margin-bottom: 15px">
+            Silakan hubungi saya melalui salah satu kontak di bawah ini:
+          </p>
+          <div class="contact-buttons">
+            <a
+              href="https://wa.me/628XXXXXXXXXX"
+              target="_blank"
+              class="contact-btn wa"
+            >
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="mailto:emailanda@gmail.com" class="contact-btn email">
+              <i class="fa-solid fa-envelope"></i> Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- JAVASCRIPT SEDERHANA UNTUK PINDAH MENU/TAB -->
+    <script>
+      function showTab(tabId) {
+        // Sembunyikan semua isi tab
+        const contents = document.querySelectorAll(".tab-content");
+        contents.forEach((content) => content.classList.remove("active-tab"));
+
+        // Tampilkan tab yang diklik
+        document.getElementById(tabId).classList.add("active-tab");
+
+        // Ubah warna tombol aktif
+        const buttons = document.querySelectorAll(".nav-btn");
+        buttons.forEach((btn) => btn.classList.remove("active"));
+        event.currentTarget.classList.add("active");
+      }
+    </script>
+  </body>
+</html>
