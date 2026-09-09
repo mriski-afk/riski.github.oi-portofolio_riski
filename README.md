@@ -1,0 +1,1 @@
+# riski.github.oi-portofolio_riski
